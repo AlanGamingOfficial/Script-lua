@@ -1,41 +1,83 @@
-# Compiled Lua sources
-luac.out
+function home()
+  menu = gg.choice({
+    " 📡𝐌𝐀𝐏 𝐇𝐀𝐂𝐊",
+    " 🚫𝐄𝐗𝐈𝐓",
+    " 🎮𝘾𝙇𝙀𝘼𝙍 𝘽𝘼𝙏𝙃𝙀𝙇 𝙍𝙀𝘾𝙊𝙍𝘿"
+  }, nil, "ʜᴀᴄᴋ ɢᴀᴍᴇʀs ᴏғғɪᴄɪᴀʟ\n⊱⋅ ──────────── ⋅⊰\n➳ sᴄʀɪᴘᴛ ɪɴɪ ʜᴀɴʏᴀ ᴍᴇᴍᴘᴇʀᴍᴜᴅᴀʜ sɪsᴀ ɴʏᴀ ɢᴜɴᴀᴋᴀɴ sᴋɪʟ\n➳ ᴛʜɪs sᴄʀɪᴘᴛ ᴏɴʟʏ ᴍᴀᴋᴇs ɪᴛ ᴇᴀsʏ ᴛᴏ ᴜsᴇ ᴛʜᴇ ʀᴇsᴛ ᴏғ ᴇᴀᴄʜ sᴋɪʟ")
+  if menu == 1 then
+    mp()
+  end--ΔЯCTƗX
+  if menu == 2 then
+gg.clearResults()
+print(os.date("╭━[✯ ᴛᴇᴀᴍ ʜᴀᴄᴋ ɢᴀᴍᴇʀs ✯]\n╰╮ᴀʟᴀɴ ɢᴀᴍɪɴɢ ᴏғғɪᴄɪᴀʟ\n┗[sᴜʙsᴄʀɪʙᴇ ᴄʜᴀɴᴇʟ ʜᴀᴄᴋ ɢᴀᴍᴇʀs ᴏғғɪᴄɪᴀʟ]\n"))
+print("♨ᴇxɪᴛ ꜱᴄʀɪᴩᴛ ꜱᴜᴄᴄᴇꜱ! ✅")
+print("♨sᴄʀɪᴘᴛ ʙʏ : ᴛᴇᴀᴍ ʜᴀᴄᴋ ɢᴀᴍᴇʀs")
+print("ᴄᴏɴᴛᴀᴄᴛ ᴘᴇʀsᴏɴ♨♨")
+print("ꔷɢᴍᴀɪʟ : ʜᴀᴄᴋɢᴀᴍᴇsᴏғғɪᴄɪᴀʟ20@gmail.com")
+print("♨ⓢⓤⓑⓢⓒⓡⓘⓑⓔ♨")
+print("ꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷꔷ")
+print("ᴄʀᴇᴀᴛᴏʀ sᴄʀɪᴘᴛ :ᴀʟᴀɴ ɢᴀᴍɪɴɢ ᴏғғɪᴄɪᴀʟ")
+print(" sᴇᴇ ʏᴏᴜ ɴᴇxᴛ ᴛɪᴍᴇ... ")
+print(" ɴᴏ ᴄʜᴇᴀᴛɪɴɢ ɴᴏ ʜᴀᴘʏ ")
+print("sᴜʙsᴄʀɪʙᴇ ᴄʜᴀɴᴇʟ ʜᴀᴄᴋ ɢᴀᴍᴇʀs ᴏғғɪᴄɪᴀʟ 😘😍")
+os.exit()
+  end--ΔЯCTƗX
+  if menu == 3 then
+    cb()
+  end--ΔЯCTƗX
+  m = -1
+end--ΔЯCTƗX
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+function mp()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("2.53125F;2.3693558e-38F;0F;0F;0F;0F;0D::25", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.processResume()
+  gg.refineNumber("0", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  for i, i in ipairs((gg.getResults(100))) do
+    if i.flags == gg.TYPE_DWORD then
+      i.value = "-1"
+      i.freeze = true
+    end--ΔЯCTƗX
+  end--ΔЯCTƗX
+  gg.addListItems((gg.getResults(100)))
+  gg.clearResults()
+  gg.toast("ᴍᴀᴘ ʜᴀᴄᴋ ᴏɴ 💢")
+  home()
+end--ΔЯCTƗX
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+function cb()
+  os.rename("/storage/emulated/0/Android/data/com.mobile.legends/cache", "/storage/emulated/0/Android/data/com.mobile.legends/yayan")
+  os.rename("/sdcard/Android/data/com.mobile.legends/cache", "/sdcard/Android/data/com.mobile.legends/manxl")
+  os.rename("/storage/emulated/0/Android/data/com.mobile.legends/files/UnityCache", "/storage/emulated/0/Android/data/com.mobile.legends/files/yayan")
+  os.rename("/sdcard/Android/data/com.mobile.legends/files/UnityCache", "/sdcard/Android/data/com.mobile.legends/files/yayan")
+  os.rename("/storage/emulated/0/Android/data/com.mobile.legends/files/dragon2017/BattleRecord", "/storage/emulated/0/Android/data/com.mobile.legends/files/dragon2017/yayan")
+  os.rename("/sdcard/Android/data/com.mobile.legends/files/dragon2017/BattleRecord", "/sdcard/Android/data/com.mobile.legends/files/dragon2017/yayan")
+  gg.toast("10%")
+  gg.sleep(500)
+  gg.toast("30%")
+  gg.sleep(500)
+  gg.toast("60%")
+  gg.sleep(500)
+  gg.toast("80%")
+  gg.sleep(500)
+  gg.toast("100%")
+  gg.sleep(500)
+  gg.toast("Cleared")
+  gg.sleep(1000)
+  gg.toast("ᴄʟᴇᴀʀ ʙᴀᴛʜᴇʟ ʀᴇᴄᴏʀᴅ sᴜᴄᴄᴇs💢")
+end--ΔЯCTƗX
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+while true do
+  if gg.isVisible(true) then
+    m = 1
+    gg.setVisible(false)
+  end--ΔЯCTƗX
+  if gg.isVisible(true) then
+    m = 1
+    gg.setVisible(false)
+  end--ΔЯCTƗX
+  if m == 1 then
+    home()
+  end--ΔЯCTƗX
+end--ΔЯCTƗX
